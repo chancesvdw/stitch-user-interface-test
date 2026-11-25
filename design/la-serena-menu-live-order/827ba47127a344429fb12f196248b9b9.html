@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "outline": "#89726b",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed": "#ffddb1",
+        "surface-container": "#f0eee8",
+        "on-primary-container": "#fffbff",
+        "inverse-on-surface": "#f3f0ea",
+        "surface-tint": "#9d4225",
+        "outline-variant": "#dcc1b9",
+        "on-primary-fixed-variant": "#7e2c10",
+        "on-error-container": "#93000a",
+        "on-background": "#1c1c18",
+        "on-tertiary-container": "#fffbff",
+        "error": "#ba1a1a",
+        "on-primary-fixed": "#3a0b00",
+        "surface-dim": "#dcdad4",
+        "on-error": "#ffffff",
+        "secondary-container": "#d4e8cd",
+        "on-secondary-fixed": "#101f0f",
+        "tertiary-container": "#976d28",
+        "primary-container": "#ba5838",
+        "secondary": "#51634e",
+        "surface-container-high": "#ebe8e2",
+        "on-primary": "#ffffff",
+        "on-secondary-fixed-variant": "#3a4b37",
+        "inverse-surface": "#31312d",
+        "surface-container-highest": "#e5e2dc",
+        "primary-fixed-dim": "#ffb59e",
+        "primary-fixed": "#ffdbd0",
+        "on-tertiary-fixed-variant": "#614000",
+        "surface": "#fcf9f3",
+        "background": "#fcf9f3",
+        "on-secondary-container": "#576954",
+        "surface-container-low": "#f6f3ed",
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed": "#d4e8cd",
+        "surface-variant": "#e5e2dc",
+        "primary": "#9a4023",
+        "on-surface": "#1c1c18",
+        "on-tertiary-fixed": "#291800",
+        "tertiary": "#7b5410",
+        "inverse-primary": "#ffb59e",
+        "surface-bright": "#fcf9f3",
+        "tertiary-fixed-dim": "#f2be71",
+        "error-container": "#ffdad6",
+        "on-surface-variant": "#56423d",
+        "secondary-fixed-dim": "#b9ccb2"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "margin-sm": "1rem",
+        "space-xl": "2.5rem",
+        "margin": "2rem",
+        "gutter-sm": "1rem",
+        "space-lg": "1.5rem",
+        "space-md": "1rem",
+        "gutter": "1.5rem"
+      },
+      "fontFamily": {
+        "body-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "title-md": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-lg-mobile": [
+          "Playfair Display"
+        ],
+        "headline-lg": [
+          "Playfair Display"
+        ],
+        "display-lg-mobile": [
+          "Playfair Display"
+        ],
+        "headline-sm": [
+          "Playfair Display"
+        ],
+        "body-md": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-md": [
+          "Playfair Display"
+        ],
+        "display-lg": [
+          "Playfair Display"
+        ],
+        "body-lg": [
+          "Plus Jakarta Sans"
+        ],
+        "label-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "label-md": [
+          "Plus Jakarta Sans"
+        ]
+      },
+      "fontSize": {
+        "body-sm": [
+          "12px",
+          {
+            "lineHeight": "18px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "400"
+          }
+        ],
+        "title-md": [
+          "18px",
+          {
+            "lineHeight": "26px",
+            "letterSpacing": "-0.005em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg-mobile": [
+          "26px",
+          {
+            "lineHeight": "34px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg": [
+          "32px",
+          {
+            "lineHeight": "40px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "display-lg-mobile": [
+          "36px",
+          {
+            "lineHeight": "44px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-sm": [
+          "20px",
+          {
+            "lineHeight": "28px",
+            "letterSpacing": "0em",
+            "fontWeight": "500"
+          }
+        ],
+        "body-md": [
+          "14px",
+          {
+            "lineHeight": "22px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-md": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "letterSpacing": "0em",
+            "fontWeight": "500"
+          }
+        ],
+        "display-lg": [
+          "48px",
+          {
+            "lineHeight": "56px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-lg": [
+          "16px",
+          {
+            "lineHeight": "24px",
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "label-sm": [
+          "11px",
+          {
+            "lineHeight": "14px",
+            "letterSpacing": "0.06em",
+            "fontWeight": "700"
+          }
+        ],
+        "label-md": [
+          "13px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.03em",
+            "fontWeight": "600"
+          }
+        ]
+      }
+    }
+  }
+};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-low py-1.5 px-margin hidden md:block"><div class="max-w-[1240px] mx-auto flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"><div><span class="">Open Daily: 12:00 PM – 11:00 PM</span><span class="mx-2">•</span><span class="">Kitchen closes at 10:30 PM</span></div><div><span class="">Reservations &amp; Assistance:</span><a class="ml-1.5 text-primary hover:text-primary-container font-medium transition-colors" href="tel:+18005553284">+1 (800) 555-DINE</a></div></div></div><div class="h-20 max-w-[1240px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">La Serena</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-0.5">Mediterranean Table</span></div><div class="hidden xl:flex items-center gap-2 pl-space-lg"><div class="flex items-center gap-1.5 bg-surface-container py-1.5 px-3 rounded-full text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">restaurant</span><span class="font-label-md text-label-md">Table 14 — Seaside Patio</span></div><div class="flex items-center gap-1.5 bg-secondary-container py-1.5 px-2.5 rounded-full text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase">Order Live</span></div></div></div><nav class="hidden lg:flex items-center gap-1 p-1 bg-surface-container-low rounded-full" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a aria-current="page" class="px-4 py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="a-la-carte-menu" href="#">Menu</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="wine-and-cocktails" href="#">Wine &amp; Cellar</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="chefs-tasting" href="#">Chef's Tasting</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="order-status" href="#">My Table</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-full"><div class="flex items-center gap-1.5"><div class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">1</div><span class="font-label-sm text-label-sm text-on-surface uppercase">Select</span></div><span class="text-outline-variant font-label-sm">→</span><div class="flex items-center gap-1.5 opacity-70"><div class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">2</div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pay</span></div></div><a class="relative p-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center" data-path="cart-and-checkout" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-5 h-5 bg-primary text-on-primary font-label-sm text-label-sm rounded-full flex items-center justify-center font-bold">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<section class="w-full bg-surface-container-low px-margin py-space-lg">
+<div class="max-w-[1240px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">wb_twilight</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">Sun-Soaked Riviera Hearth</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">La Serena</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Fresh Coastal Mediterranean Kitchen • Handcrafted daily with DOP Sicilian olive oil &amp; local sea salt</p>
+</div>
+<div class="flex items-center bg-surface-container-highest p-1 rounded-full shadow-sm">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md transition-all" id="mode-dinein" onclick="setOrderMode('dinein')">
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+<span class="">Dine-In (Table 14)</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="mode-takeout" onclick="setOrderMode('takeout')">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span class="">Takeout</span>
+</button>
+</div>
+</div>
+<div class="max-w-[1240px] mx-auto mt-space-md pt-space-sm">
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none"><button class="shrink-0 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-shadow shadow-sm font-semibold">Pizzas</button><button class="shrink-0 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">Sides</button><button class="shrink-0 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">Drinks</button></div>
+</div>
+</section>
+<div class="max-w-[1240px] mx-auto px-margin py-space-lg w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-xl"><section class="flex flex-col gap-space-md"><div class="flex items-baseline justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span><h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Pizzas</h2></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Wood-Fired Hearth</span></div><div class="flex flex-col gap-space-md"><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row gap-space-md"><div class="w-full md:w-48 h-44 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img class="w-full h-full object-cover" alt="Pepperoni Pizza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBerwlqSS4OlmJkK8ozFbny7zrE55eHMnoow7i-A9hn5FCQKMAd9AbogSZkgMHu892RhvvsbJjFNt7nD_rwETkkvDgrvMCxL4I4gG56A9Jd7PWIKF9SuPhFtWnUMvY7OsEZnx4HbXCOVNBcUBWmpu4jrx_g9FGo97YoiDbg5Lap6Qn9x-nernobkf2223CvrBKtiUqqIiFMHIfaenDHoM1Yfz3ioqySgRMtxBBdvEFl3_GiE6ifgeLfRg"></div><div class="flex flex-col justify-between flex-1"><div><div class="flex items-start justify-between"><div><h3 class="font-headline-sm text-headline-sm text-on-surface">Pepperoni Pizza</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Artisanal pepperoni, crushed San Marzano tomato sauce, fresh mozzarella.</p></div><span class="font-title-md text-title-md text-primary shrink-0 ml-2">$12.95</span></div><div class="mt-3"><label class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider mb-1.5">Select Size</label><div class="flex flex-wrap gap-1.5"><button class="px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all">Large ($12.95)</button><button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Medium ($10.00)</button><button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Small ($7.00)</button></div></div></div><div class="flex items-center justify-between mt-4 pt-2 border-t border-surface-container-high/60"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">remove</span></button><span class="font-label-md text-label-md px-3 min-w-[20px] text-center">1</span><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">add</span></button></div><button class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span class="">Add to Order</span></button></div></div></div><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row gap-space-md"><div class="w-full md:w-48 h-44 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img class="w-full h-full object-cover" alt="Cheese Pizza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBerwlqSS4OlmJkK8ozFbny7zrE55eHMnoow7i-A9hn5FCQKMAd9AbogSZkgMHu892RhvvsbJjFNt7nD_rwETkkvDgrvMCxL4I4gG56A9Jd7PWIKF9SuPhFtWnUMvY7OsEZnx4HbXCOVNBcUBWmpu4jrx_g9FGo97YoiDbg5Lap6Qn9x-nernobkf2223CvrBKtiUqqIiFMHIfaenDHoM1Yfz3ioqySgRMtxBBdvEFl3_GiE6ifgeLfRg"></div><div class="flex flex-col justify-between flex-1"><div><div class="flex items-start justify-between"><div><h3 class="font-headline-sm text-headline-sm text-on-surface">Cheese Pizza</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Campanian buffalo mozzarella, rich tomato sugo, fresh basil, extra virgin olive oil.</p></div><span class="font-title-md text-title-md text-primary shrink-0 ml-2">$10.95</span></div><div class="mt-3"><label class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider mb-1.5">Select Size</label><div class="flex flex-wrap gap-1.5"><button class="px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all">Large ($10.95)</button><button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Medium ($9.25)</button><button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Small ($6.50)</button></div></div></div><div class="flex items-center justify-between mt-4 pt-2 border-t border-surface-container-high/60"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">remove</span></button><span class="font-label-md text-label-md px-3 min-w-[20px] text-center">1</span><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">add</span></button></div><button class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span class="">Add to Order</span></button></div></div></div><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row gap-space-md"><div class="w-full md:w-48 h-44 rounded-lg overflow-hidden shrink-0 bg-surface-container"><img class="w-full h-full object-cover" alt="Eggplant Pizza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcORtJH8rpNNo1Qyltizvngb_GJ5TiJ1kIFlO57VlRL13N7d2qfzdjhX-8kdSYyPvT7b2xUWInIsoyWCSngO6WPjSphy908oqJYdRJu35INdhAzdhzqdDuMexSDswCuKnuXYbY6Rx1-GbEeUHjHdItSTzVR5fH5YZLZ-Hvof7vEPsYVT0tQ8mneiEkwGOMY4QQNX-ITfje9OJOiUrfPhXjtMp_EVMDOgpkosnoHt6m3sO5meSnXhmnQQ"></div><div class="flex flex-col justify-between flex-1"><div><div class="flex items-start justify-between"><div><h3 class="font-headline-sm text-headline-sm text-on-surface">Eggplant Pizza</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Roasted marinated eggplant, garlic ricotta, toasted pine nuts, oregano, tomato reduction.</p></div><span class="font-title-md text-title-md text-primary shrink-0 ml-2">$11.95</span></div><div class="mt-3"><label class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider mb-1.5">Select Size</label><div class="flex flex-wrap gap-1.5"><button class="px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all">Large ($11.95)</button><button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Medium ($9.75)</button><button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Small ($6.75)</button></div></div></div><div class="flex items-center justify-between mt-4 pt-2 border-t border-surface-container-high/60"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">remove</span></button><span class="font-label-md text-label-md px-3 min-w-[20px] text-center">1</span><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">add</span></button></div><button class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span class="">Add to Order</span></button></div></div></div></div></section><section class="flex flex-col gap-space-md"><div class="flex items-baseline justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span><h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Sides</h2></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Fresh &amp; Crispy</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-space-md"><div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm"><div class="relative w-full h-48 overflow-hidden bg-surface-container"><img class="w-full h-full object-cover" alt="Fries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf1epYac-KWhc_HWxiDtdZp_93WhgxUBh5WuQFfjR6kFJddUOTSdE0-ojNJgXeAxuAZP3n7eyyAJar6yO20Uk0817_0kN48PsrxcZB3k03eZwJZoBiOcMMz5JSgBNlbHtx0cz-2-LDlKTkD_zmeoVppCpNv8-Rnjdqs29k0u-fwj3O_dItSi5yT8EfZw8z0SAm2f8iQMUkZSsCBGkuL1w-Bhio7NTzvz7j2RvbZML16bDQZabW042pDA"><span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-full font-semibold">Crisp &amp; Golden</span></div><div class="p-space-md flex flex-col flex-1 justify-between"><div><div class="flex items-start justify-between gap-2"><h3 class="font-headline-sm text-headline-sm text-on-surface">Fries</h3><span class="font-title-md text-title-md text-primary shrink-0">$4.50</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hand-cut golden potatoes seasoned with sea salt and herbs.</p><div class="mt-3 flex items-center gap-1.5"><button class="flex-1 py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm text-center transition-colors font-medium">Large ($4.50)</button><button class="flex-1 py-1.5 px-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm text-center transition-colors font-medium">Small ($3.50)</button></div></div><div class="flex items-center justify-between mt-space-md pt-space-xs"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">remove</span></button><span class="font-label-md text-label-md px-2.5 min-w-[20px] text-center">1</span><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">add</span></button></div><button class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span class="">Add to Order</span></button></div></div></div><div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm"><div class="relative w-full h-48 overflow-hidden bg-surface-container"><img class="w-full h-full object-cover" alt="Greek Salad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuLWAif6mSEoIiwD1feNJ3iPHFD9DKN-9XFAHRL8vnY2Y3l1tb_pe5_QnDUH7-HbGgq7eWWjdPab6zrOT5qpnR_IfVzflN9AVxLO5Sha0jN49D03tU2TcCxIQJ59fCd2kNQQJrnWn9md4xiuao24XFFhup1nvsMjWB2jlZUaMilooQs1AviThwQMsMWIbnZsR9pHUyxU56hlXXWJyP8MhnC550e4NnuujZe70G-L7349b1qjodbyr33A"><span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-full font-semibold">Fresh Salad</span></div><div class="p-space-md flex flex-col flex-1 justify-between"><div><div class="flex items-start justify-between gap-2"><h3 class="font-headline-sm text-headline-sm text-on-surface">Greek Salad</h3><span class="font-title-md text-title-md text-primary shrink-0">$7.25</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Crisp cucumbers, vine-ripened tomatoes, Kalamata olives, authentic feta, and Greek oregano.</p><div class="mt-2 text-on-surface-variant font-label-sm text-label-sm">Single Size Portion</div></div><div class="flex items-center justify-between mt-space-md pt-space-xs"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">remove</span></button><span class="font-label-md text-label-md px-2.5 min-w-[20px] text-center">1</span><button class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px]">add</span></button></div><button class="px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span class="">Add to Order</span></button></div></div></div></div></section><section class="flex flex-col gap-space-md mb-space-lg"><div class="flex items-baseline justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span><h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Drinks</h2></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Chilled Refreshments</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-space-md"><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between"><div><div class="flex items-start justify-between"><h3 class="font-headline-sm text-headline-sm text-on-surface">Coke</h3><span class="font-title-md text-title-md text-primary shrink-0">$3.00</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Classic chilled Coca-Cola served with ice.</p><div class="mt-3 flex flex-wrap gap-1"><button class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all">Large ($3.00)</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Med ($2.00)</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Sm ($1.00)</button></div></div><div class="flex items-center justify-between mt-space-md pt-2 border-t border-surface-container-high/60"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 min-w-[16px] text-center">1</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><button class="px-3 py-1.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-[14px]">add</span><span class="">Add</span></button></div></div><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between"><div><div class="flex items-start justify-between"><h3 class="font-headline-sm text-headline-sm text-on-surface">Sprite</h3><span class="font-title-md text-title-md text-primary shrink-0">$3.00</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Crisp lemon-lime soda served chilled over ice.</p><div class="mt-3 flex flex-wrap gap-1"><button class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all">Large ($3.00)</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Med ($2.00)</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Sm ($1.00)</button></div></div><div class="flex items-center justify-between mt-space-md pt-2 border-t border-surface-container-high/60"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 min-w-[16px] text-center">1</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><button class="px-3 py-1.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-[14px]">add</span><span class="">Add</span></button></div></div><div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between"><div><div class="flex items-start justify-between"><h3 class="font-headline-sm text-headline-sm text-on-surface">Bottled Water</h3><span class="font-title-md text-title-md text-primary shrink-0">$5.00</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Natural artisan mineral spring water bottle.</p><div class="mt-3 text-on-surface-variant font-label-sm text-label-sm">Standard Bottle</div></div><div class="flex items-center justify-between mt-space-md pt-2 border-t border-surface-container-high/60"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 min-w-[16px] text-center">1</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><button class="px-3 py-1.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-[14px]">add</span><span class="">Add</span></button></div></div></div></section></div>
+<aside class="lg:col-span-5 xl:col-span-4 sticky top-28">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg flex flex-col">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Your Order</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold">(4 items)</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-medium flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+<span id="summary-order-type" class="">Table 14 • Seaside Patio (Dine-In)</span>
+</p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" onclick="clearBasketPrompt()" title="Clear Order">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+</button>
+</div>
+<div class="flex flex-col divide-y divide-surface-container py-space-sm max-h-[340px] overflow-y-auto"><div class="py-3 flex flex-col gap-1.5"><div class="flex items-start justify-between"><div class="flex flex-col"><span class="font-title-md text-body-lg text-on-surface font-semibold">Pepperoni Pizza</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Size: Large</span></div><span class="font-title-md text-title-md text-on-surface font-semibold">$12.95</span></div><div class="flex items-center justify-between"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 text-center">1</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><span class="font-body-sm text-body-sm text-on-surface-variant">$12.95 ea</span></div></div><div class="py-3 flex flex-col gap-1.5"><div class="flex items-start justify-between"><div class="flex flex-col"><span class="font-title-md text-body-lg text-on-surface font-semibold">Greek Salad</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Regular Size</span></div><span class="font-title-md text-title-md text-on-surface font-semibold">$7.25</span></div><div class="flex items-center justify-between"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 text-center">1</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><span class="font-body-sm text-body-sm text-on-surface-variant">$7.25 ea</span></div></div><div class="py-3 flex flex-col gap-1.5"><div class="flex items-start justify-between"><div class="flex flex-col"><span class="font-title-md text-body-lg text-on-surface font-semibold">Coke</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Size: Medium</span></div><span class="font-title-md text-title-md text-on-surface font-semibold">$4.00</span></div><div class="flex items-center justify-between"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 text-center">2</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><span class="font-body-sm text-body-sm text-on-surface-variant">$2.00 ea</span></div></div><div class="py-3 flex flex-col gap-1.5"><div class="flex items-start justify-between"><div class="flex flex-col"><span class="font-title-md text-body-lg text-on-surface font-semibold">Fries</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Size: Small</span></div><span class="font-title-md text-title-md text-on-surface font-semibold">$3.50</span></div><div class="flex items-center justify-between"><div class="flex items-center bg-surface-container-low rounded-full p-0.5"><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">remove</span></button><span class="font-label-md text-label-md px-2 text-center">1</span><button class="w-6 h-6 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px]">add</span></button></div><span class="font-body-sm text-body-sm text-on-surface-variant">$3.50 ea</span></div></div></div>
+<div class="mt-space-sm pt-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Kitchen &amp; Dietary Notes</label>
+<textarea class="w-full bg-surface-container-low text-on-surface p-2.5 rounded-lg text-body-sm font-body-sm placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest shadow-inner resize-none" placeholder="Add kitchen notes (allergies, dressing on side...)" rows="2"></textarea>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container space-y-1.5"><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span class="">Subtotal</span><span class="font-medium text-on-surface">$27.70</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span class="">Estimated Tax (8.5%)</span><span class="font-medium text-on-surface">$2.35</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span class="flex items-center gap-1">Hospitality Service (10%) <span class="material-symbols-outlined text-[14px]">info</span></span><span class="font-medium text-on-surface">$2.77</span></div><div class="flex items-center justify-between pt-2 border-t border-surface-container font-title-md text-title-md text-on-surface font-bold"><span class="">Current Total</span><span class="text-primary text-xl font-headline-sm text-headline-sm">$32.82</span></div></div>
+<div class="mt-space-md flex flex-col gap-1.5">
+<a class="w-full py-3.5 px-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold tracking-wide transition-all shadow-md flex items-center justify-center gap-2 group" data-path="cart-and-checkout" href="#"><span class="">Ready to Pay • $32.82</span><span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant">Proceed to order review and final submission</p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 bg-surface-container-highest text-on-surface px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none translate-y-3 z-50" id="toast-msg">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toast-text">Item added to your order</span>
+</div>
+<script>
+    function setOrderMode(mode) {
+      const btnDinein = document.getElementById('mode-dinein');
+      const btnTakeout = document.getElementById('mode-takeout');
+      const label = document.getElementById('summary-order-type');
+      if (mode === 'dinein') {
+        btnDinein.className = "flex items-center gap-1.5 px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md transition-all shadow-sm";
+        btnTakeout.className = "flex items-center gap-1.5 px-space-md py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+        label.textContent = "Table 14 • Seaside Patio (Dine-In)";
+      } else {
+        btnTakeout.className = "flex items-center gap-1.5 px-space-md py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md transition-all shadow-sm";
+        btnDinein.className = "flex items-center gap-1.5 px-space-md py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+        label.textContent = "Takeout Express • Curbside Pickup";
+      }
+    }
+
+    function incrementCounter(id) {
+      const el = document.getElementById(id);
+      let count = parseInt(el.textContent, 10);
+      el.textContent = count + 1;
+    }
+
+    function decrementCounter(id) {
+      const el = document.getElementById(id);
+      let count = parseInt(el.textContent, 10);
+      if (count > 1) {
+        el.textContent = count - 1;
+      }
+    }
+
+    function selectCalamariSize(type, price) {
+      document.getElementById('price-calamari').textContent = '$' + price.toFixed(2);
+      const reg = document.getElementById('btn-calamari-reg');
+      const feast = document.getElementById('btn-calamari-feast');
+      if (type === 'Regular') {
+        reg.className = 'flex-1 py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm text-center transition-colors font-medium';
+        feast.className = 'flex-1 py-1.5 px-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm text-center transition-colors font-medium';
+      } else {
+        feast.className = 'flex-1 py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm text-center transition-colors font-medium';
+        reg.className = 'flex-1 py-1.5 px-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm text-center transition-colors font-medium';
+      }
+    }
+
+    function selectPizzaSize(size, price) {
+      document.getElementById('price-margherita').textContent = '$' + price.toFixed(2);
+      const btns = ['10', '14', '18'];
+      btns.forEach(b => {
+        const el = document.getElementById('btn-pizza-' + b);
+        if (b === size) {
+          el.className = 'px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all';
+        } else {
+          el.className = 'px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all';
+        }
+      });
+    }
+
+    function selectTartufoSize(size, price) {
+      document.getElementById('price-tartufo').textContent = '$' + price.toFixed(2);
+      const b10 = document.getElementById('btn-tartufo-10');
+      const b14 = document.getElementById('btn-tartufo-14');
+      if (size === '10') {
+        b10.className = 'px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all';
+        b14.className = 'px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all';
+      } else {
+        b14.className = 'px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold transition-all';
+        b10.className = 'px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all';
+      }
+    }
+
+    function selectTaglioliniSize(size, price) {
+      document.getElementById('price-tagliolini').textContent = '$' + price.toFixed(2);
+      const lunch = document.getElementById('btn-tagliolini-lunch');
+      const grande = document.getElementById('btn-tagliolini-grande');
+      if (size === 'lunch') {
+        lunch.className = 'flex-1 py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm text-center transition-colors font-medium';
+        grande.className = 'flex-1 py-1.5 px-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm text-center transition-colors font-medium';
+      } else {
+        grande.className = 'flex-1 py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm text-center transition-colors font-medium';
+        lunch.className = 'flex-1 py-1.5 px-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm text-center transition-colors font-medium';
+      }
+    }
+
+    function notifyAdded(itemName) {
+      const toast = document.getElementById('toast-msg');
+      const toastText = document.getElementById('toast-text');
+      toastText.textContent = itemName + ' added to your order';
+      toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+      }, 2500);
+    }
+
+    function clearBasketPrompt() {
+      if (confirm('Clear your current table order items?')) {
+        alert('Order reset. You can rebuild your Mediterranean feast.');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1240px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div><div class="font-headline-md text-headline-md text-primary mb-2">La Serena</div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Coastal Mediterranean gastronomy crafted with lineage ingredients, slow fire, and fresh cold-pressed olive oils.</p><div class="flex gap-2"><span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-full">Organic DOP</span><span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-full">Slow Food</span></div></div><div><div class="font-label-md text-label-md uppercase text-on-surface font-semibold mb-space-sm">Service &amp; Hours</div><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class="">Lunch: 12:00 PM – 3:30 PM</li><li class="">Aperitivo: 4:00 PM – 6:30 PM</li><li class="">Dinner: 6:30 PM – 11:00 PM</li><li class="text-primary font-medium pt-1">Table Service to Patrons</li></ul></div><div><div class="font-label-md text-label-md uppercase text-on-surface font-semibold mb-space-sm">Patio &amp; Cellar</div><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class="">Seaside Terrace &amp; Solarium</li><li class="">Biodynamic Italian Wines</li><li class="">Artisanal Pasta Lab</li><li class="">Woodfired Hearth</li></ul></div><div><div class="font-label-md text-label-md uppercase text-on-surface font-semibold mb-space-sm">Concierge</div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Via della Marina 24, Coastal Pavilion</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs"><a class="hover:text-primary" href="tel:+18005553284">+1 (800) 555-DINE</a></p><p class="font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary" href="mailto:ciao@laserenatable.com">ciao@laserenatable.com</a></p></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="">© 2025 La Serena Mediterranean Table. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Dietary &amp; Allergens Guide</a><a class="hover:text-on-surface transition-colors" href="#">Kitchen Provenance</a><a class="hover:text-on-surface transition-colors" href="#">Privacy</a></div></div></div></footer>
+
+</body></html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" fill="none">
+  <g transform="translate(4, 8)">
+    <circle cx="24" cy="24" r="22" fill="#c25e3e" fill-opacity="0.12" stroke="#c25e3e" stroke-width="2"/>
+    <!-- Stylized Mediterranean sun rays and olive branch motif -->
+    <circle cx="24" cy="24" r="10" fill="#c25e3e"/>
+    <path d="M24 6V10M24 38V42M6 24H10M38 24H42M11.3 11.3L14.1 14.1M33.9 33.9L36.7 36.7M11.3 36.7L14.1 33.9M33.9 14.1L36.7 11.3" stroke="#c25e3e" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="62" y="33" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="700" fill="#2d2a26" letter-spacing="1">LA SERENA</text>
+  <text x="64" y="47" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#c25e3e" letter-spacing="3">MEDITERRANEAN TABLE</text>
+</svg>

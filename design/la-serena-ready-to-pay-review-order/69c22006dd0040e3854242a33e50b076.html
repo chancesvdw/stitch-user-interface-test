@@ -1,0 +1,611 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "outline": "#89726b",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "tertiary-fixed": "#ffddb1",
+        "surface-container": "#f0eee8",
+        "on-primary-container": "#fffbff",
+        "inverse-on-surface": "#f3f0ea",
+        "surface-tint": "#9d4225",
+        "outline-variant": "#dcc1b9",
+        "on-primary-fixed-variant": "#7e2c10",
+        "on-error-container": "#93000a",
+        "on-background": "#1c1c18",
+        "on-tertiary-container": "#fffbff",
+        "error": "#ba1a1a",
+        "on-primary-fixed": "#3a0b00",
+        "surface-dim": "#dcdad4",
+        "on-error": "#ffffff",
+        "secondary-container": "#d4e8cd",
+        "on-secondary-fixed": "#101f0f",
+        "tertiary-container": "#976d28",
+        "primary-container": "#ba5838",
+        "secondary": "#51634e",
+        "surface-container-high": "#ebe8e2",
+        "on-primary": "#ffffff",
+        "on-secondary-fixed-variant": "#3a4b37",
+        "inverse-surface": "#31312d",
+        "surface-container-highest": "#e5e2dc",
+        "primary-fixed-dim": "#ffb59e",
+        "primary-fixed": "#ffdbd0",
+        "on-tertiary-fixed-variant": "#614000",
+        "surface": "#fcf9f3",
+        "background": "#fcf9f3",
+        "on-secondary-container": "#576954",
+        "surface-container-low": "#f6f3ed",
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed": "#d4e8cd",
+        "surface-variant": "#e5e2dc",
+        "primary": "#9a4023",
+        "on-surface": "#1c1c18",
+        "on-tertiary-fixed": "#291800",
+        "tertiary": "#7b5410",
+        "inverse-primary": "#ffb59e",
+        "surface-bright": "#fcf9f3",
+        "tertiary-fixed-dim": "#f2be71",
+        "error-container": "#ffdad6",
+        "on-surface-variant": "#56423d",
+        "secondary-fixed-dim": "#b9ccb2"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "margin-sm": "1rem",
+        "space-xl": "2.5rem",
+        "margin": "2rem",
+        "gutter-sm": "1rem",
+        "space-lg": "1.5rem",
+        "space-md": "1rem",
+        "gutter": "1.5rem"
+      },
+      "fontFamily": {
+        "body-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "title-md": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-lg-mobile": [
+          "Playfair Display"
+        ],
+        "headline-lg": [
+          "Playfair Display"
+        ],
+        "display-lg-mobile": [
+          "Playfair Display"
+        ],
+        "headline-sm": [
+          "Playfair Display"
+        ],
+        "body-md": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-md": [
+          "Playfair Display"
+        ],
+        "display-lg": [
+          "Playfair Display"
+        ],
+        "body-lg": [
+          "Plus Jakarta Sans"
+        ],
+        "label-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "label-md": [
+          "Plus Jakarta Sans"
+        ]
+      },
+      "fontSize": {
+        "body-sm": [
+          "12px",
+          {
+            "lineHeight": "18px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "400"
+          }
+        ],
+        "title-md": [
+          "18px",
+          {
+            "lineHeight": "26px",
+            "letterSpacing": "-0.005em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg-mobile": [
+          "26px",
+          {
+            "lineHeight": "34px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg": [
+          "32px",
+          {
+            "lineHeight": "40px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "display-lg-mobile": [
+          "36px",
+          {
+            "lineHeight": "44px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-sm": [
+          "20px",
+          {
+            "lineHeight": "28px",
+            "letterSpacing": "0em",
+            "fontWeight": "500"
+          }
+        ],
+        "body-md": [
+          "14px",
+          {
+            "lineHeight": "22px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-md": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "letterSpacing": "0em",
+            "fontWeight": "500"
+          }
+        ],
+        "display-lg": [
+          "48px",
+          {
+            "lineHeight": "56px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-lg": [
+          "16px",
+          {
+            "lineHeight": "24px",
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "label-sm": [
+          "11px",
+          {
+            "lineHeight": "14px",
+            "letterSpacing": "0.06em",
+            "fontWeight": "700"
+          }
+        ],
+        "label-md": [
+          "13px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.03em",
+            "fontWeight": "600"
+          }
+        ]
+      }
+    }
+  }
+};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-low py-1.5 px-margin hidden md:block"><div class="max-w-[1240px] mx-auto flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"><div><span class="">Open Daily: 12:00 PM – 11:00 PM</span><span class="mx-2">•</span><span class="">Kitchen closes at 10:30 PM</span></div><div><span class="">Reservations &amp; Assistance:</span><a class="ml-1.5 text-primary hover:text-primary-container font-medium transition-colors" href="tel:+18005553284">+1 (800) 555-DINE</a></div></div></div><div class="h-20 max-w-[1240px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">La Serena</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-0.5">Mediterranean Table</span></div><div class="hidden xl:flex items-center gap-2 pl-space-lg"><div class="flex items-center gap-1.5 bg-surface-container py-1.5 px-3 rounded-full text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">restaurant</span><span class="font-label-md text-label-md">Table 14 — Seaside Patio</span></div><div class="flex items-center gap-1.5 bg-secondary-container py-1.5 px-2.5 rounded-full text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase">Order Live</span></div></div></div><nav class="hidden lg:flex items-center gap-1 p-1 bg-surface-container-low rounded-full" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="a-la-carte-menu" href="#">Menu</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="wine-and-cocktails" href="#">Wine &amp; Cellar</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="chefs-tasting" href="#">Chef's Tasting</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="order-status" href="#">My Table</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-full"><div class="flex items-center gap-1.5"><div class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">1</div><span class="font-label-sm text-label-sm text-on-surface uppercase">Select</span></div><span class="text-outline-variant font-label-sm">→</span><div class="flex items-center gap-1.5 opacity-70"><div class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">2</div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pay</span></div></div><a class="relative p-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center" data-path="cart-and-checkout" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-5 h-5 bg-primary text-on-primary font-label-sm text-label-sm rounded-full flex items-center justify-center font-bold">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 right-12 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 left-0 w-80 h-80 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-[1240px] mx-auto px-margin py-space-lg">
+<!-- Top Navigation & Stage Indicator -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-md">
+<a class="group inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:text-primary transition-colors" data-path="a-la-carte-menu" href="#">
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:-translate-x-1">arrow_back</span>
+<span class="">Back to Menu (Modify Items)</span>
+</a>
+<div class="flex items-center gap-3 self-start md:self-auto">
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Kitchen Queue Active</span>
+</div>
+<div class="bg-surface-container-high px-3.5 py-1.5 rounded-full flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">receipt_long</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-tight">Order #LS-8492</span>
+</div>
+</div>
+</div>
+<!-- Header Section with Editorial Flair -->
+<div class="pt-space-xs pb-space-lg flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Checkout Step 2 of 2</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-medium">Table 14 — Seaside Terrace</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Review Your Order &amp; Ready to Pay</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            Please verify your selections, portion specifications, and culinary notes prior to transmitting directly to Chef Vincenzo’s hearth.
+          </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-xl shadow-sm self-start lg:self-auto">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Fire-to-Table Est.</div>
+<div class="font-title-md text-title-md text-on-surface">20 – 25 mins</div>
+</div>
+</div>
+</div>
+<!-- Main Layout: Left/Center Itemization vs Right Summary Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start pb-space-xl">
+<!-- Left 7 Cols: Detailed Order Itemization -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Section Banner -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Curated Selections</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">4 Items (5 Portions)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider hidden sm:inline">Pricing DOP / Direct Kitchen Line</span>
+</div>
+<!-- Items Container -->
+<div class="flex flex-col gap-3"><!-- Item 1: Pepperoni Pizza -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-start gap-space-md">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Woodfired artisanal pepperoni pizza with charred crust, fresh mozzarella, spicy pepperoni slices, and rich tomato sauce." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-JOZDeWIugS4wEGGGyqmfFBHj8bOitT1VNZpWqeNZ5tiTfIRARFVjHQewPfQNZvJv_mdSAh6drCVZ0Vv0ZBjeD40KSFEn_hcZXA9B3IqVpP7OKp9r9S7qig2QkkCJ85AsMVFj0ZgUkRABP_leMYzwqgU7SUJd8Yf0aeY9ZFiQ5R2NVrmPM3fBgZ7SsuYV1vbFYTk5xaf0kdpRXIaiM9yhkxeft-UZzElf3KV8pqkzyvZ3wthrkhZmaw">
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm text-[10px] font-label-sm font-bold text-on-surface px-1.5 py-0.5 rounded">Hearth</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pepperoni Pizza</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Large</span>
+<span class="text-outline-variant">•</span>
+<span class="bg-secondary-container/60 text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase">Woodfired</span>
+</div>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1 -mr-1" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="inline-flex items-center bg-surface-container-low rounded-full p-0.5 shadow-inner">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-semibold text-sm">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">$12.95 ea</span>
+</div>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface font-bold">$12.95</div>
+<div class="font-label-sm text-label-sm text-outline-variant">1 × $12.95</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Greek Salad -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-start gap-space-md">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Authentic Greek salad with crisp cucumbers, ripe tomatoes, Kalamata olives, red onion, and fresh Greek feta dressed with oregano and olive oil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzD5P2hfNnvP4y8d4VENzD-KTnMY0Pzl4ujPYfT9kCsEyCyhhdG7VCx-gbbm00z5j38Fc8ZnBYRMXalMuvBDGQCmSRV64ypfry2pJD_0S-QSWca0i5RshtaHSIfjzvJi9NIKMn4_zdCr7Y7eljr9EaWkWKWqiS4IalISKvmxAjRLso0MKLhCiKHx5WwCU1FgreeznCioaSYr3uHABmyyp-MjJdwum855QT99CLu6XxMIuItLUCmIBtCg">
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm text-[10px] font-label-sm font-bold text-secondary px-1.5 py-0.5 rounded">Fresh</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Greek Salad</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Standard Serving</span>
+<span class="text-outline-variant">•</span>
+<span class="bg-secondary-container/60 text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase">Vegetarian</span>
+</div>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1 -mr-1" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="inline-flex items-center bg-surface-container-low rounded-full p-0.5 shadow-inner">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-semibold text-sm">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">$7.25 ea</span>
+</div>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface font-bold">$7.25</div>
+<div class="font-label-sm text-label-sm text-outline-variant">1 × $7.25</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Coke (Medium) x2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex flex-col sm:flex-row sm:items-start gap-space-md">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Chilled Coca-Cola served with ice and lemon in a crystal highball glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAojajpUvSRt9tc_RHrLX6fX00G0F09pKQV9V1PAFaZL5o6ARuEEDUa9ObQfgUZ7PCcyk3koOFLOT5tbI80ViU-m-Bsh4vlMI-PlamR8z_xvI1MGOgzvxBdEZ3yUMlbYp8RqDpIMI1gpK8uVwM00L1Gu_14-V26ZUjb5NRS00YJYZzkjEVa244C-MTsmNSC_rjMq6tY_YP4JhwdsXmr7nVaw0pYPh-a7Ib8QgZdysbeV848BooRJO8pbA">
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm text-[10px] font-label-sm font-bold text-on-secondary-fixed px-1.5 py-0.5 rounded">×2 Ordered</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Coke</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Medium</span>
+<span class="text-outline-variant">•</span>
+<span class="bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase">Chilled</span>
+</div>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1 -mr-1" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="inline-flex items-center bg-surface-container-low rounded-full p-0.5 shadow-inner">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-title-md text-title-md text-primary font-bold text-sm">2</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">$2.00 ea</span>
+</div>
+<div class="text-right">
+<div class="font-title-md text-title-md text-primary font-bold">$4.00</div>
+<div class="font-label-sm text-label-sm text-outline-variant">2 × $2.00</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: Fries (Small) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-start gap-space-md">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Crispy golden french fries sprinkled with sea salt and fresh herbs in a warm ceramic serving dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAMLOA_vqXoyAjD8sYmanEnu0pt9CFqXfFpLZrddR-bEshgQf5D0d0yWkt_lXRtnqxlDBDLljVN00E_C7H33HIYzxxRU9LEkQUhzUE6qCjgv_QnEEEJrzse3jtbw1AtAt_kGlaX36rUzWC_tFOHIMYSrZdcOM-T09Ox-51K3FKDIaJ6i1Nq9AXsbCRF_iC6vgssqTiP0yP1siv49-H6gRgeCHE2IEvHjiiNMsBPTrWQxoPpl564JeJOQ">
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm text-[10px] font-label-sm font-bold text-on-surface px-1.5 py-0.5 rounded">Side</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Fries</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Small</span>
+<span class="text-outline-variant">•</span>
+<span class="bg-secondary-container/60 text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase">Crispy</span>
+</div>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1 -mr-1" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="inline-flex items-center bg-surface-container-low rounded-full p-0.5 shadow-inner">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-semibold text-sm">1</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">$3.50 ea</span>
+</div>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface font-bold">$3.50</div>
+<div class="font-label-sm text-label-sm text-outline-variant">1 × $3.50</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- Sommelier / Pairing Prompt Bento Card -->
+<div class="mt-space-sm bg-gradient-to-br from-surface-container-low via-surface-container to-secondary-container/20 p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">wine_bar</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Complementary Wine Pairings?</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Chef suggests a glass of Vermentino di Sardegna with Calamari &amp; Tagliolini.</div>
+</div>
+</div>
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shrink-0 shadow-sm" data-path="wine-and-cocktails" href="#">
+              Add Glass +$16
+            </a>
+</div>
+</div>
+<!-- Right 5 Cols: Payment & Final Submission Sticky Card -->
+<div class="lg:col-span-5 flex flex-col gap-space-md lg:sticky lg:top-24">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Payment &amp; Finalize</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+</div>
+<!-- Payment Method Radio Selector -->
+<div class="space-y-space-sm pt-space-xs pb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold block">Method of Settlement</span>
+<!-- Selected Card Option -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 text-primary accent-primary focus:ring-0" name="payment_method" type="radio">
+<div class="w-8 h-6 bg-surface-container-highest rounded flex items-center justify-center font-label-sm text-[10px] font-bold text-on-surface tracking-tighter">
+                    VISA
+                  </div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Pre-authorized Card</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">•••• 4288 (Exp 08/28)</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</label>
+<!-- Apple Pay Option -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary accent-primary focus:ring-0" name="payment_method" type="radio">
+<div class="w-8 h-6 bg-on-surface rounded flex items-center justify-center text-surface text-[14px]">
+<span class="material-symbols-outlined text-[16px]">phone_iphone</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Apple Pay</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">One-tap contactless verification</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Fast</span>
+</label>
+<!-- Pay at Table Option -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary accent-primary focus:ring-0" name="payment_method" type="radio">
+<div class="w-8 h-6 bg-surface-container-highest rounded flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">room_service</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Pay Server at Table</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cash, split bill, or concierge folio</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">At Exit</span>
+</label>
+</div>
+<!-- Dietary / Service Checkboxes -->
+<div class="pt-space-sm pb-space-md space-y-2.5 bg-surface-container-low/60 -mx-space-lg px-space-lg py-space-sm">
+<label class="flex items-start gap-2.5 cursor-pointer select-none">
+<input checked="" class="mt-0.5 w-4 h-4 rounded text-secondary accent-secondary" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">Include eco-friendly compostable cutlery &amp; linen napkins</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer select-none">
+<input checked="" class="mt-0.5 w-4 h-4 rounded text-secondary accent-secondary" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">Serve dishes "As Ready" (Coursed Mediterranean flow)</span>
+</label>
+</div>
+<!-- Gratuity Selection -->
+<div class="pt-space-md pb-space-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline font-bold">Kitchen &amp; Hospitality Gratuity</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">18% Selected ($4.99)</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 p-1 bg-surface-container-low rounded-xl">
+<button class="py-1.5 text-center font-label-md text-label-md rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button">15%</button>
+<button class="py-1.5 text-center font-label-md text-label-md rounded-lg bg-secondary text-on-secondary font-bold shadow-sm" type="button">18%</button>
+<button class="py-1.5 text-center font-label-md text-label-md rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button">20%</button>
+<button class="py-1.5 text-center font-label-md text-label-md rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button">Custom</button>
+</div>
+</div>
+<!-- Price Breakdown Calculation -->
+<div class="pt-space-sm pb-space-md space-y-2"><div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="">Food &amp; Beverage Subtotal (5 items)</span>
+<span class="font-medium text-on-surface">$27.70</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="">Coastal Municipal Tax (8.5%)</span>
+<span class="font-medium text-on-surface">$2.35</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="">Service &amp; Culinary Staff (18%)</span>
+<span class="font-medium text-on-surface">$4.99</span>
+</div>
+<div class="pt-space-sm mt-space-sm bg-surface-container-low p-space-md rounded-xl flex items-baseline justify-between">
+<div>
+<div class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider">Total Due Now</div>
+<div class="font-body-sm text-body-sm text-secondary">All taxes &amp; gratuity included</div>
+</div>
+<div class="font-display-lg text-display-lg text-primary font-bold tracking-tight">
+                  $35.04
+                </div>
+</div></div>
+<!-- Primary Submission CTA -->
+<button class="w-full mt-space-sm py-4 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group" type="button"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">lock</span>
+<span class="tracking-wide">SUBMIT ORDER ($35.04)</span></button>
+<!-- Security & Kitchen Signal Badge -->
+<div class="mt-3 flex items-center justify-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">flash_on</span>
+<span class="">Direct encrypted push to Table 14 expeditor</span>
+</div>
+<!-- Secondary Actions -->
+<div class="mt-space-md text-center">
+<a class="font-body-sm text-body-sm text-outline hover:text-primary transition-colors underline underline-offset-4" data-path="a-la-carte-menu" href="#">
+                Cancel Order or Return to Menu
+              </a>
+</div>
+</div>
+<!-- Help / Assistance Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Require immediate server attention?</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Press call button on your physical table pedestal.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Script for Interactive Steppers and Feedback -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const submitBtn = document.querySelector('button.bg-primary');
+      if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+          submitBtn.disabled = true;
+          submitBtn.classList.add('opacity-90');
+          submitBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span>Transmitting to Kitchen...</span>
+          `;
+          setTimeout(() => {
+            submitBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[20px]">check</span>
+              <span>Order Received • Fire Table 14!</span>
+            `;
+            submitBtn.classList.remove('bg-primary');
+            submitBtn.classList.add('bg-secondary');
+          }, 1200);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1240px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div><div class="font-headline-md text-headline-md text-primary mb-2">La Serena</div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Coastal Mediterranean gastronomy crafted with lineage ingredients, slow fire, and fresh cold-pressed olive oils.</p><div class="flex gap-2"><span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-full">Organic DOP</span><span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-full">Slow Food</span></div></div><div><div class="font-label-md text-label-md uppercase text-on-surface font-semibold mb-space-sm">Service &amp; Hours</div><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class="">Lunch: 12:00 PM – 3:30 PM</li><li class="">Aperitivo: 4:00 PM – 6:30 PM</li><li class="">Dinner: 6:30 PM – 11:00 PM</li><li class="text-primary font-medium pt-1">Table Service to Patrons</li></ul></div><div><div class="font-label-md text-label-md uppercase text-on-surface font-semibold mb-space-sm">Patio &amp; Cellar</div><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class="">Seaside Terrace &amp; Solarium</li><li class="">Biodynamic Italian Wines</li><li class="">Artisanal Pasta Lab</li><li class="">Woodfired Hearth</li></ul></div><div><div class="font-label-md text-label-md uppercase text-on-surface font-semibold mb-space-sm">Concierge</div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Via della Marina 24, Coastal Pavilion</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs"><a class="hover:text-primary" href="tel:+18005553284">+1 (800) 555-DINE</a></p><p class="font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary" href="mailto:ciao@laserenatable.com">ciao@laserenatable.com</a></p></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="">© 2025 La Serena Mediterranean Table. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Dietary &amp; Allergens Guide</a><a class="hover:text-on-surface transition-colors" href="#">Kitchen Provenance</a><a class="hover:text-on-surface transition-colors" href="#">Privacy</a></div></div></div></footer>
+
+</body></html>
